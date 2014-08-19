@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.selftracker"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.selftracker.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.DoctorActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.DoctorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.SignInPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.SignInPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.selftracker.SignUp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.selftracker.ViewRating"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.ViewRating" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       	<activity
+            android:name="com.selftracker.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.Settings"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.Settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.SQLite"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.SQLite" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.SQLView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.SQLView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.ModeOfAppUse"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.ModeOfAppUse" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.TimeForVisit"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.TimeForVisit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.UnderConstruction"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.UnderConstruction" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.ChangePassword"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.ChangePassword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.selftracker.Remainder"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.selftracker.Remainder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyMapLocationActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.selftracker.MyMapLocationActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+   	 	<!-- Make sure the uses-library line is inside the application tag -->
+		<uses-library android:name="com.google.android.maps" />
+        </application>
+        
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+</manifest>
